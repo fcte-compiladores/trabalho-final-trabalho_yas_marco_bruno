@@ -11,7 +11,6 @@ from interpretador_ook import tokenize_ook, read_ook_code
 
 EXAMPLES_DIR = pathlib.Path(__file__).resolve().parent.parent / "exemplos"
 
-
 @pytest.mark.parametrize(
     "filename",
     ["contador.ook", "contador_simples.ook", "hello.ook", "test_simple.ook"],
