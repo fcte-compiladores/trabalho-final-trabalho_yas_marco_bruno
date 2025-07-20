@@ -7,9 +7,11 @@ import pytest
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 
-from interpretador_ook import tokenize_ook, read_ook_code
+
+from interpretador_ook import tokenize_ook, read_ook_code  # noqa: E402
 
 EXAMPLES_DIR = pathlib.Path(__file__).resolve().parent.parent / "exemplos"
+
 
 @pytest.mark.parametrize(
     "filename",
@@ -31,5 +33,4 @@ def test_tokenize_example_files(filename):
     # Ensure all produced commands are valid Brainfuck instructions
     for cmd in bf_tokens:
         assert cmd in "><+-.,[]"
-
 
