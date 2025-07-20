@@ -13,29 +13,26 @@ OOK_TO_BF = {
 }
 
 
-
 def read_ook_code(path):
     with open(path, 'r', encoding='utf-8-sig') as file:
         text = file.read()
     return text
 
 
-
-
 def tokenize_ook(code):
     # Remove comments (anything after #)
     code = re.sub(r"#.*$", "", code, flags=re.MULTILINE)
-    
+
     # Normalize Unicode (NFKC is generally good for compatibility)
     import unicodedata
     code = unicodedata.normalize("NFKC", code)
 
-    # Trim any leading/trailing whitespace that might interfere with tokenization
+    # Trim whitespace that might interfere with tokenization
     code = code.strip()
 
     # Find all Ook tokens, case-insensitive
     tokens = re.findall(r"Ook[.?!]", code)
-    
+
     print(f"[DEBUG] Total de tokens encontrados: {len(tokens)}")
     print(f"[DEBUG] Primeiros 5 tokens: {tokens[:5]}")
     print(f"[DEBUG] Últimos 5 tokens: {tokens[-5:]}")
@@ -43,17 +40,19 @@ def tokenize_ook(code):
     if len(tokens) % 2 != 0:
         # Print all tokens to debug the odd count
         print(f"[DEBUG] Todos os tokens: {tokens}")
-        raise SyntaxError(f"Número ímpar de tokens Ook!: {len(tokens)} encontrados")
+        raise SyntaxError(
+            f"Número ímpar de tokens Ook!: {len(tokens)} encontrados"
+        )
 
     bf_tokens = []
     for i in range(0, len(tokens), 2):
         pair = (tokens[i], tokens[i+1])
         if pair not in OOK_TO_BF:
-            raise SyntaxError(f"Comando inválido: {pair[0]} {pair[1]} (par na posição {i})")
+            raise SyntaxError(
+                f"Comando inválido: {pair[0]} {pair[1]} (par na posição {i})"
+            )
         bf_tokens.append(OOK_TO_BF[pair])
     return bf_tokens
-
-
 
 
 def run_brainfuck(code):
@@ -81,11 +80,11 @@ def run_brainfuck(code):
         if cmd == '>':
             ptr += 1
             if ptr >= len(tape):
-                ptr = 0 # Wrap around
+                ptr = 0  # Wrap around
         elif cmd == '<':
             ptr -= 1
             if ptr < 0:
-                ptr = len(tape) - 1 # Wrap around
+                ptr = len(tape) - 1  # Wrap around
         elif cmd == '+':
             tape[ptr] = (tape[ptr] + 1) % 256
         elif cmd == '-':
@@ -95,15 +94,13 @@ def run_brainfuck(code):
         elif cmd == ',':
             try:
                 tape[ptr] = ord(input("Entrada: ")[0])
-            except:
+            except Exception:
                 tape[ptr] = 0
         elif cmd == '[' and tape[ptr] == 0:
             pc = jump_map[pc]
         elif cmd == ']' and tape[ptr] != 0:
             pc = jump_map[pc]
         pc += 1
-
-
 
 
 def main():
@@ -119,7 +116,6 @@ def main():
     except Exception as e:
         print("Erro:", e)
 
+
 if __name__ == "__main__":
     main()
-
-
