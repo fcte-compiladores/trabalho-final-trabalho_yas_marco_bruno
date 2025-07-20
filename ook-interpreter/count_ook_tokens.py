@@ -16,7 +16,8 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         main(sys.argv[1])
     else:
-        default = Path(__file__).parent / "exemplos" / "contador_clean.ook"
-        main(default)
+        # Use one of the sample programs as the default
+        default = Path(__file__).parent / "exemplos" / "contador.ook"
+
 
 
