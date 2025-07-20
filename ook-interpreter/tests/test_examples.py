@@ -1,6 +1,8 @@
 import pathlib
 import sys
+
 import re
+
 import pytest
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
@@ -29,4 +31,5 @@ def test_tokenize_example_files(filename):
     # Ensure all produced commands are valid Brainfuck instructions
     for cmd in bf_tokens:
         assert cmd in "><+-.,[]"
+
 

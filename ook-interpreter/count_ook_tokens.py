@@ -18,6 +18,6 @@ if __name__ == "__main__":
     else:
         # Use one of the sample programs as the default
         default = Path(__file__).parent / "exemplos" / "contador.ook"
-        main(default)
+
 
 
