@@ -4,8 +4,8 @@
 ## Integrantes
 
 - **Bruno Cunha Vasconcelos de Araujo** — 221034973 — [GitHub](https://github.com/brunocva)
-- **Marco Túlio Soares** — 221008310 — [GitHub](https://github.com/MarcoTulioSoares)
-- **Yasmin Kátia** — 200029088 — [GitHub](https://github.com/yaskisoba)
+- **Marco Túlio Soares de Deus** — 221008310 — [GitHub](https://github.com/MarcoTulioSoares)
+- **Yasmin Oliveira Rosa** — 200029088 — [GitHub](https://github.com/yaskisoba)
 
 ## Introdução
 
