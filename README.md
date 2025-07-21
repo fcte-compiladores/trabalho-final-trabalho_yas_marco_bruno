@@ -42,8 +42,8 @@ A linguagem implementada possui 8 comandos, com a seguinte sintaxe e semântica:
 Clone o repositório e navegue até a pasta:
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://github.com/fcte-compiladores/trabalho-final-trabalho_yas_marco_bruno.git
+cd trabalho-final-trabalho_yas_marco_bruno
 ```
 
 ## Como usar
