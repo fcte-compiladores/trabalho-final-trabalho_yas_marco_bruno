@@ -37,6 +37,7 @@ def tokenize_ook(code):
         bf_tokens.append(OOK_TO_BF[pair])
     return bf_tokens
 
+
 def run_brainfuck(code):
     tape = [0] * 30000
     ptr = 0
@@ -69,7 +70,9 @@ def run_brainfuck(code):
         elif cmd == '-':
             tape[ptr] = (tape[ptr] - 1) % 256
         elif cmd == '.':
-            print(chr(tape[ptr]), end='')
+            valor = tape[ptr]
+            print(f"{chr(valor)} ({valor})", end=' ')
+            sys.stdout.flush()
         elif cmd == ',':
             tape[ptr] = 0
         elif cmd == '[' and tape[ptr] == 0:
@@ -77,6 +80,7 @@ def run_brainfuck(code):
         elif cmd == ']' and tape[ptr] != 0:
             pc = jump_map[pc]
         pc += 1
+
 
 def main():
     if len(sys.argv) != 2:
