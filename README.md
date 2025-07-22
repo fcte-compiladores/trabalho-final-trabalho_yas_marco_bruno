@@ -7,7 +7,7 @@
 |-------------------------------------|-------------|------------------------------------------------------|
 | Bruno Cunha Vasconcelos de Araujo   | 221034973   | [https://github.com/brunocva](https://github.com/brunocva)              |
 | Marco Túlio Soares de Deus          | 221008310   | [https://github.com/MarcoTulioSoares](https://github.com/MarcoTulioSoares) |
-| Yasmin Oliveira Rosa                | 200029088   | [https://github.com/yaskisoba](https://github.com/yaskisoba)]           |
+| Yasmin Oliveira Rosa                | 200029088   | [https://github.com/yaskisoba](https://github.com/yaskisoba)           |
 
 ## Introdução
 
