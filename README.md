@@ -7,7 +7,7 @@
 |-------------------------------------|-------------|------------------------------------------------------|
 | Bruno Cunha Vasconcelos de Araujo   | 221034973   | [https://github.com/brunocva](https://github.com/brunocva)              |
 | Marco Túlio Soares de Deus          | 221008310   | [https://github.com/MarcoTulioSoares](https://github.com/MarcoTulioSoares) |
-| Yasmin Oliveira Rosa                | 200029088   | [[(https://github.com/yaskisoba) ](https://github.com/yaskisoba)]           |
+| Yasmin Oliveira Rosa                | 200029088   | [https://github.com/yaskisoba](https://github.com/yaskisoba)]           |
 
 ## Introdução
 
@@ -100,9 +100,3 @@ Todos os exemplos estão disponíveis na pasta `exemplos/`:
 
 - A linguagem não possui sistema de tipos nem estrutura de controle além de laços.
 - Não há tratamento de erros para programas com tokens malformados ou desequilíbrio de colchetes.
-
-**Futuras melhorias:**
-
-- Adicionar suporte à depuração (modo passo a passo)
-- Implementar mensagens de erro mais descritivas
-- Suporte a leitura de entrada padrão diretamente
