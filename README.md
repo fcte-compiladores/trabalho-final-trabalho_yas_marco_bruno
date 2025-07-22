@@ -3,9 +3,11 @@
 
 ## Integrantes
 
-- **Bruno Cunha Vasconcelos de Araujo** — 221034973 — [GitHub](https://github.com/brunocva)
-- **Marco Túlio Soares de Deus** — 221008310 — [GitHub](https://github.com/MarcoTulioSoares)
-- **Yasmin Oliveira Rosa** — 200029088 — [GitHub](https://github.com/yaskisoba)
+| Nome                                | Matrícula   | Repositório GitHub do Aluno                          |
+|-------------------------------------|-------------|------------------------------------------------------|
+| Bruno Cunha Vasconcelos de Araujo   | 221034973   | [brunocva](https://github.com/brunocva)              |
+| Marco Túlio Soares de Deus          | 221008310   | [MarcoTulioSoares](https://github.com/MarcoTulioSoares) |
+| Yasmin Oliveira Rosa                | 200029088   | [yaskisoba](https://github.com/yaskisoba)            |
 
 ## Introdução
 
